@@ -1,0 +1,30 @@
+---
+layout: mylayout.html
+eleventyExcludeFromCollections: true
+title: DEV WITH LUV Home
+---
+
+<div class="content">
+  <h5>about</h5>
+  <p>
+    이름은 그저 아침에 들었던
+    <a href="https://youtu.be/XsX3ATc3FbA" target="_blank">노래</a>가 떠올랐을
+    뿐
+  </p>
+</div>
+
+<div class="content">
+  <p>
+    <a href="https://github.com/laranhee/dev-with-luv" target="_blank"
+      >사이트에 포스트 추가하기</a
+    >
+  </p>
+  <h5>Post</h5>
+  <ul>
+    {%- for post in collections.all -%}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
