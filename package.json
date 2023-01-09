@@ -9,7 +9,7 @@
   "author": "laranhee",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy": "^1.0.2",
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2"
